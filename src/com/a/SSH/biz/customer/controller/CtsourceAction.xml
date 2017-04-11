@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="ctsource" namespace="/ctsource" extends="default">
+        <action name="toMain" class="ctsourceAction" method="toMain">
+            <result name="customerAdmin" >
+                /WEB-INF/view/customer/ctsource.jsp
+            </result>
+        </action>
+        <action name="queryCtsource" class="ctsourceAction" method="queryCtsource">
+        </action>
+        <action name="saveOrUpdate" class="ctsourceAction" method="saveOrUpdate">
+        </action>
+        <action name="deleteAuth" class="ctsourceAction" method="deleteAuth">
+        </action>
+    </package>
+</struts>

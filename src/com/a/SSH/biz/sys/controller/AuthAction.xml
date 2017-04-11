@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="auth" namespace="/auth" extends="default">
+
+
+        <action name="toMain" class="authAction" method="toMain">
+            <result name="authAdmin" >
+                /WEB-INF/view/sys/auth/auth.jsp
+            </result>
+        </action>
+        <action name="getAllAuth" class="authAction" method="getAllAuth">
+
+        </action>
+        <action name="saveOrUpdate" class="authAction" method="saveOrUpdate">
+
+        </action>
+        <action name="delete" class="authAction" method="deleteAuth">
+
+        </action>
+        <action name="selectAllAuthByLayer" class="authAction" method="selectAllAuthByLayer">
+
+        </action>
+        <action name="moveAuth" class="authAction" method="moveAuth">
+
+        </action>
+
+    </package>
+
+</struts>

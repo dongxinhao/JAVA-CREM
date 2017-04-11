@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="ctstatus" namespace="/ctstatus" extends="default">
+        <action name="toMain" class="ctstatusAction" method="toMain">
+            <result name="customerAdmin" >
+                /WEB-INF/view/customer/ctstatus.jsp
+            </result>
+        </action>
+        <action name="queryCtstatus" class="ctstatusAction" method="queryCtstatus">
+        </action>
+        <action name="saveOrUpdate" class="ctstatusAction" method="saveOrUpdate">
+        </action>
+        <action name="deleteAuth" class="ctstatusAction" method="deleteAuth">
+        </action>
+    </package>
+</struts>

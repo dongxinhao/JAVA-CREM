@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="cttype" namespace="/cttype" extends="default">
+        <action name="toMain" class="cttypeAction" method="toMain">
+            <result name="customerAdmin" >
+                /WEB-INF/view/customer/cttype.jsp
+            </result>
+        </action>
+        <action name="queryCttype" class="cttypeAction" method="queryCttype">
+        </action>
+        <action name="saveOrUpdate" class="cttypeAction" method="saveOrUpdate">
+        </action>
+        <action name="deleteAuth" class="cttypeAction" method="deleteAuth">
+        </action>
+    </package>
+</struts>

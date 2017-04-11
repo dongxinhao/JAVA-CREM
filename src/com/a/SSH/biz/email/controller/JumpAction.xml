@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="jump" namespace="/jump" extends="default">
+
+        <action name="emailJump" class="jumpAction"
+                method="emailJump">
+            <result name="success" >
+                /WEB-INF/view/email/writemail.jsp
+            </result>
+        </action>
+
+        <action name="getReceiver" class="jumpAction"
+                method="getReceiver">
+
+        </action>
+
+        <action name="getSender" class="jumpAction"
+                method="getSender">
+
+        </action>
+
+        <action name="sendEmail" class="jumpAction"
+                method="sendEmail">
+
+        </action>
+
+        <action name="sendBoxJump" class="jumpAction"
+                method="sendBoxJump">
+            <result name="success">
+                /WEB-INF/view/email/sendBox.jsp
+            </result>
+        </action>
+
+        <action name="queryEmail" class="jumpAction"
+                method="queryEmail">
+
+        </action>
+
+        <action name="removeFromSend" class="jumpAction"
+                method="removeFromSend">
+
+        </action>
+
+        <action name="saveEmail" class="jumpAction"
+                method="saveEmail">
+
+        </action>
+
+        <action name="draftBoxJump" class="jumpAction"
+                method="draftBoxJump">
+            <result name="success">
+                /WEB-INF/view/email/draftBox.jsp
+            </result>
+        </action>
+
+        <action name="removeFromDraft" class="jumpAction"
+                method="removeFromDraft">
+
+        </action>
+
+        <action name="queryEmailFromDraftBox" class="jumpAction"
+                method="queryEmailFromDraftBox">
+
+        </action>
+
+        <action name="sendFromDraft" class="jumpAction"
+                method="sendFromDraft">
+
+        </action>
+
+
+    </package>
+</struts>

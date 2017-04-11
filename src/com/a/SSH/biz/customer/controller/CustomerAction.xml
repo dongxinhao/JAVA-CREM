@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="customer" namespace="/customer" extends="default">
+        <action name="toMain" class="customerAction" method="toMain">
+            <result name="customerAdmin" >
+                /WEB-INF/view/customer/customer.jsp
+            </result>
+        </action>
+        <action name="queryCustomer" class="customerAction" method="queryCustomer">
+        </action>
+        <action name="selectAllStatus" class="customerAction" method="selectAllStatus">
+        </action>
+        <action name="deleteCust" class="customerAction" method="deleteCust">
+        </action>
+        <action name="saveOrUpdate" class="customerAction" method="saveOrUpdate">
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="staffAction" namespace="/staffAction" extends="default">
+
+        <action name="toHouseMain" class="staffAction" method="toHouseMain">
+            <result name="success">
+               /WEB-INF/view/staff/houseMessage/houseMessage.jsp
+            </result>
+        </action>
+
+        <action name="queryHouse" class="staffAction" method="queryHouse">
+
+        </action>
+
+
+        <action name="saveOrUpdateHouse" class="staffAction" method="saveOrUpdateHouse">
+
+        </action>
+
+        <action name="deleteHouse" class="staffAction" method="deleteHouse">
+
+        </action>
+
+        <action name="toDeptMain" class="staffAction" method="toDeptMain">
+            <result name="success">
+                /WEB-INF/view/staff/deptMessage/deptMessage.jsp
+            </result>
+        </action>
+
+        <action name="queryDept" class="staffAction" method="queryDept">
+
+        </action>
+
+        <action name="saveOrUpdateDept" class="staffAction" method="saveOrUpdateDept">
+
+        </action>
+
+        <action name="deleteDept" class="staffAction" method="deleteDept">
+
+        </action>
+
+
+    </package>
+
+    <include file="com/a/**/controller/*Action.xml"/>
+
+    <!-- Add packages here -->
+
+</struts>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="CtCare" namespace="/CtCare" extends="default">
+
+        <action name="toCTCareMain" class="ctCareAction" method="toMain">
+            <result name="ctCareAdmin" >
+                /WEB-INF/view/customer/ctCare/ctCare.jsp
+            </result>
+        </action>
+        <action name="queryCtCare" class="ctCareAction" method="queryCtCare">
+
+        </action>
+        <action name="delete" class="ctCareAction" method="delete">
+
+        </action>
+        <action name="loadCtContent" class="ctCareAction" method="loadCtContent">
+
+        </action>
+        <action name="saveOrUpdate" class="ctCareAction" method="saveOrUpdate">
+
+        </action>
+
+    </package>
+
+</struts>

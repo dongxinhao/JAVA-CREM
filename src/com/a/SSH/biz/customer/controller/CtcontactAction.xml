@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="ctcontact" namespace="/ctcontact" extends="default">
+        <action name="toCtcontact" class="ctcontactAction" method="toCtcontact">
+            <result name="contact">/WEB-INF/view/customer/ctContact.jsp</result>
+        </action>
+
+        <action name="getContact" class="ctcontactAction" method="getContact">
+        </action>
+
+        <action name="getCustomer" class="ctcontactAction" method="getAllCustomer">
+        </action>
+
+        <action name="saveOrUpdate" class="ctcontactAction" method="saveOrUpdate">
+        </action>
+
+        <action name="deleteContact" class="ctcontactAction" method="deleteContact">
+        </action>
+
+        <action name="exportContact" class="ctcontactAction" method="exportContact">
+        </action>
+
+    </package>
+
+</struts>

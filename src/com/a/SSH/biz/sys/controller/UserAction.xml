@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="user" namespace="/user" extends="default">
+
+
+        <action name="toMain" class="userAction" method="toMain">
+            <result name="userAdmin" >
+                /WEB-INF/view/sys/user/user.jsp
+            </result>
+        </action>
+        <action name="queryUser" class="userAction" method="queryUser">
+
+        </action>
+        <action name="saveOrUpdate" class="userAction" method="saveOrUpdate">
+
+        </action>
+        <action name="delete" class="userAction" method="deleteAuth">
+
+        </action>
+
+    </package>
+
+</struts>
